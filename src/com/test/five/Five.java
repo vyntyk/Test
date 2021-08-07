@@ -17,8 +17,9 @@ public class Five {
         //printSix("*");
         printSeven("*");
         printEight("*");
-        //printNine("*");
-        //printNull("*");
+
+        printNull("*");
+        printNine("*");
     }
     String x = "*";
     private static void printOne(String x) {
@@ -74,5 +75,23 @@ public class Five {
         System.out.println(" "+x);
         System.out.println(""+x);
         System.out.println(x);
+    }
+    private static void printNull(String x) {
+        System.out.println(" "+x+x+x+" ");
+        System.out.println(""+x+"   "+x+" ");
+        System.out.println(""+x+"   "+x+" ");
+        System.out.println(x+"   "+x);
+        System.out.println(""+x+"   "+x+" ");
+        System.out.println(""+x+"   "+x+" ");
+        System.out.println(" "+x+x+x+" ");
+    }
+    private static void printNine(String x) {
+        System.out.println(" "+x+x+x+x);
+        System.out.println(x+"   "+x);
+        System.out.println(x+"   "+x);
+        System.out.println(" "+x+x+x+x);
+        System.out.println("    "+x);
+        System.out.println("    "+x);
+        System.out.println(" "+x+x+x);
     }
 }
