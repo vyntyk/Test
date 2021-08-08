@@ -10,18 +10,14 @@ public class Item {
         this.weight = weight;
         this.cost = cost;
     }
-
     public int getWeight() {
         return weight;
     }
-
     public double getCost() {
         return cost;
     }
-
     @Override
     public String toString() {
-        return name + ":  Вес - "+weight +"\n"+
-                "Стоимость - "+ cost;
+        return name + ":  Вес - "+weight +"\n"+ "Стоимость - "+ cost;
     }
 }

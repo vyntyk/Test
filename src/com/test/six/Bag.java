@@ -12,11 +12,9 @@ public class Bag {
         this.weight = weight;
         list = new ArrayList<>();
     }
-
     public int getWeight() {
         return weight;
     }
-
     // заполняет сумку оптимальными предметами
     public void putInBag(List<Item> items) {
         recursion(items);
@@ -29,7 +27,6 @@ public class Bag {
         System.out.println("Общий вес: " + totalWeight(result));
         System.out.printf("Общая стоимость: %f", totalCost(result));
     }
-
     private int totalWeight(List<Item> items) {
         int total = 0;
         for (int i = 0; i < items.size(); i++) {
@@ -37,7 +34,6 @@ public class Bag {
         }
         return total;
     }
-
     private double totalCost(List<Item> items) {
         double total = 0;
         for (int i = 0; i < items.size(); i++) {
@@ -45,13 +41,11 @@ public class Bag {
         }
         return total;
     }
-
     private void recursion(List<Item> list) {
         if (list.size() == 0) return;
         if (totalWeight(list) <= weight && !listList.contains(list)) {
             listList.add(list);
         }
-
         for (int i = 0; i < list.size(); i++) {
             List<Item> copy = new ArrayList<>();
             copy.addAll(list);
@@ -59,7 +53,6 @@ public class Bag {
             recursion(copy);
         }
     }
-
     private List<Item> returnResult() {
         double total = 0;
         int index = 0;
@@ -71,9 +64,8 @@ public class Bag {
         }
         return listList.get(index);
     }
-
     @Override
     public String toString() {
-        return "В сумке находятся следующие предметы: ";
+        return "В сейфе находятся следующие предметы: ";
     }
 }
