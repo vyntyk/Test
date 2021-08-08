@@ -7,7 +7,14 @@ public class Five {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number = Integer.parseInt(scanner.nextLine());
-        String s = Integer.toString(number);
+        Integer totalInt = new Integer(number);
+        String strSum = totalInt.toString();
+        //String nums[] = strSum.split("");
+
+        /*for( int i = 0; i < nums.length; i++ ) {
+            System.out.print(Integer.parseInt(nums[i]));
+            System.out.println("");
+        }*/
         switch (number){
             case 1: printOne("*");
              break;
