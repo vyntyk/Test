@@ -48,8 +48,10 @@ class Main {
         a = a4-a3;
         b = b4-b3;
         Vector v = new Vector(a, b);
+        System.out.println("Длина первого вектора: " +u.getLength());
+        System.out.println("Длина второго вектора: " +v.getLength());
 
-        System.out.println(u.Scalar(v));
+        System.out.println("Скалярное произведение векторов: "+ u.Scalar(v));
         System.out.println(u.GetAngle(v));
 
         con.close();
