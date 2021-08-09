@@ -51,10 +51,9 @@ class Main {
         System.out.println("Длина первого вектора: " +u.getLength());
         System.out.println("Длина второго вектора: " +v.getLength());
 
-        System.out.println("Скалярное произведение векторов: "+ u.Scalar(v));
-        System.out.println(u.GetAngle(v));
+        System.out.println("Скалярное произведение векторов: " + u.Scalar(v));
+        System.out.println("Угол: " +u.GetAngle(v));
 
         con.close();
     }
 }
-
